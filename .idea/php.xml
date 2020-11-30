@@ -107,6 +107,17 @@
       <path value="$PROJECT_DIR$/app/vendor/nikic/php-parser" />
       <path value="$PROJECT_DIR$/app/vendor/phpunit/phpunit" />
       <path value="$PROJECT_DIR$/app/vendor/league/commonmark" />
+      <path value="$PROJECT_DIR$/app/vendor/dasprid/enum" />
+      <path value="$PROJECT_DIR$/app/vendor/mobiledetect/mobiledetectlib" />
+      <path value="$PROJECT_DIR$/app/vendor/laravel/fortify" />
+      <path value="$PROJECT_DIR$/app/vendor/laravel/jetstream" />
+      <path value="$PROJECT_DIR$/app/vendor/jaybizzle/crawler-detect" />
+      <path value="$PROJECT_DIR$/app/vendor/jenssegers/agent" />
+      <path value="$PROJECT_DIR$/app/vendor/pragmarx/google2fa" />
+      <path value="$PROJECT_DIR$/app/vendor/paragonie/constant_time_encoding" />
+      <path value="$PROJECT_DIR$/app/vendor/bacon/bacon-qr-code" />
+      <path value="$PROJECT_DIR$/app/vendor/laravel/sanctum" />
+      <path value="$PROJECT_DIR$/app/vendor/livewire/livewire" />
     </include_path>
   </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="7.3" />

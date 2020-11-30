@@ -9,8 +9,10 @@
       <sourceFolder url="file://$MODULE_DIR$/app/database/seeders" isTestSource="false" packagePrefix="Database\Seeders\" />
       <sourceFolder url="file://$MODULE_DIR$/app/tests" isTestSource="true" packagePrefix="Tests\" />
       <excludeFolder url="file://$MODULE_DIR$/app/vendor/asm89/stack-cors" />
+      <excludeFolder url="file://$MODULE_DIR$/app/vendor/bacon/bacon-qr-code" />
       <excludeFolder url="file://$MODULE_DIR$/app/vendor/brick/math" />
       <excludeFolder url="file://$MODULE_DIR$/app/vendor/composer" />
+      <excludeFolder url="file://$MODULE_DIR$/app/vendor/dasprid/enum" />
       <excludeFolder url="file://$MODULE_DIR$/app/vendor/dnoegel/php-xdg-base-dir" />
       <excludeFolder url="file://$MODULE_DIR$/app/vendor/doctrine/inflector" />
       <excludeFolder url="file://$MODULE_DIR$/app/vendor/doctrine/instantiator" />
@@ -29,11 +31,18 @@
       <excludeFolder url="file://$MODULE_DIR$/app/vendor/guzzlehttp/promises" />
       <excludeFolder url="file://$MODULE_DIR$/app/vendor/guzzlehttp/psr7" />
       <excludeFolder url="file://$MODULE_DIR$/app/vendor/hamcrest/hamcrest-php" />
+      <excludeFolder url="file://$MODULE_DIR$/app/vendor/jaybizzle/crawler-detect" />
+      <excludeFolder url="file://$MODULE_DIR$/app/vendor/jenssegers/agent" />
+      <excludeFolder url="file://$MODULE_DIR$/app/vendor/laravel/fortify" />
       <excludeFolder url="file://$MODULE_DIR$/app/vendor/laravel/framework" />
+      <excludeFolder url="file://$MODULE_DIR$/app/vendor/laravel/jetstream" />
+      <excludeFolder url="file://$MODULE_DIR$/app/vendor/laravel/sanctum" />
       <excludeFolder url="file://$MODULE_DIR$/app/vendor/laravel/tinker" />
       <excludeFolder url="file://$MODULE_DIR$/app/vendor/league/commonmark" />
       <excludeFolder url="file://$MODULE_DIR$/app/vendor/league/flysystem" />
       <excludeFolder url="file://$MODULE_DIR$/app/vendor/league/mime-type-detection" />
+      <excludeFolder url="file://$MODULE_DIR$/app/vendor/livewire/livewire" />
+      <excludeFolder url="file://$MODULE_DIR$/app/vendor/mobiledetect/mobiledetectlib" />
       <excludeFolder url="file://$MODULE_DIR$/app/vendor/mockery/mockery" />
       <excludeFolder url="file://$MODULE_DIR$/app/vendor/monolog/monolog" />
       <excludeFolder url="file://$MODULE_DIR$/app/vendor/myclabs/deep-copy" />
@@ -41,6 +50,7 @@
       <excludeFolder url="file://$MODULE_DIR$/app/vendor/nikic/php-parser" />
       <excludeFolder url="file://$MODULE_DIR$/app/vendor/nunomaduro/collision" />
       <excludeFolder url="file://$MODULE_DIR$/app/vendor/opis/closure" />
+      <excludeFolder url="file://$MODULE_DIR$/app/vendor/paragonie/constant_time_encoding" />
       <excludeFolder url="file://$MODULE_DIR$/app/vendor/phar-io/manifest" />
       <excludeFolder url="file://$MODULE_DIR$/app/vendor/phar-io/version" />
       <excludeFolder url="file://$MODULE_DIR$/app/vendor/phpdocumentor/reflection-common" />
@@ -54,6 +64,7 @@
       <excludeFolder url="file://$MODULE_DIR$/app/vendor/phpunit/php-text-template" />
       <excludeFolder url="file://$MODULE_DIR$/app/vendor/phpunit/php-timer" />
       <excludeFolder url="file://$MODULE_DIR$/app/vendor/phpunit/phpunit" />
+      <excludeFolder url="file://$MODULE_DIR$/app/vendor/pragmarx/google2fa" />
       <excludeFolder url="file://$MODULE_DIR$/app/vendor/psr/container" />
       <excludeFolder url="file://$MODULE_DIR$/app/vendor/psr/event-dispatcher" />
       <excludeFolder url="file://$MODULE_DIR$/app/vendor/psr/http-client" />
