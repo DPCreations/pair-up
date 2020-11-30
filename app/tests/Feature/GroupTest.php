@@ -38,7 +38,7 @@ class GroupTest extends TestCase
         ]);
 
         $response->assertStatus(500);
-        $this->assertDatabaseCount('groups', 0);
+        $this->assertDatabaseCount('groups', 0);x
     }
 
     /** @test */
