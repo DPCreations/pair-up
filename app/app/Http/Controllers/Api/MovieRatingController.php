@@ -21,7 +21,7 @@ class MovieRatingController extends Controller
      * @param Request $request
      * @return Response
      */
-    public function store(Request $request)
+    public function store(Request $request): Response
     {
         $request->validate([
             'movie_id' => 'required|integer',
@@ -42,7 +42,7 @@ class MovieRatingController extends Controller
      * @param MovieRating $movieRating
      * @return Response
      */
-    public function show(MovieRating $movieRating)
+    public function show(MovieRating $movieRating): Response
     {
         //
     }
@@ -54,7 +54,7 @@ class MovieRatingController extends Controller
      * @param MovieRating $movieRating
      * @return Response
      */
-    public function update(Request $request, MovieRating $movieRating)
+    public function update(Request $request, MovieRating $movieRating): Response
     {
         //
     }
@@ -65,7 +65,7 @@ class MovieRatingController extends Controller
      * @param MovieRating $movieRating
      * @return Response
      */
-    public function destroy(MovieRating $movieRating)
+    public function destroy(MovieRating $movieRating): Response
     {
         //
     }
