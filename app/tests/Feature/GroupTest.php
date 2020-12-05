@@ -12,6 +12,10 @@ class GroupTest extends TestCase
 {
     use RefreshDatabase;
 
+    private $payload = [
+        'name' => 'My group',
+    ];
+
     /** @test */
     public function authenticated_user_can_create_group()
     {
@@ -19,26 +23,20 @@ class GroupTest extends TestCase
 
         Auth::login(User::first());
 
-        $response = $this->post('/api/group', [
-            'name' => 'My group',
-        ]);
+        $response = $this->post('/api/group', $this->payload);
 
         $response->assertStatus(201);
 
-        $this->assertDatabaseHas('groups', [
-            'name' => 'My group'
-        ]);
+        $this->assertDatabaseHas('groups', $this->payload);
     }
 
     /** @test */
     public function unauthenticated_user_cannot_created_group()
     {
-        $response = $this->post('/api/group', [
-            'name' => 'My group',
-        ]);
+        $response = $this->post('/api/group', $this->payload);
 
-        $response->assertStatus(500);
-        $this->assertDatabaseCount('groups', 0);x
+        $response->assertStatus(302);
+        $this->assertDatabaseCount('groups', 0);
     }
 
     /** @test */

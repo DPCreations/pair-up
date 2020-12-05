@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Api\{GroupController, MovieRatingController};
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
