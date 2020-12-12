@@ -2,10 +2,8 @@
 
 namespace Tests\Feature;
 
-use App\Models\User;
-use Database\Seeders\UsersTableSeeder;
+use App\Models\{Group, User};
 use Illuminate\Foundation\Testing\RefreshDatabase;
-use Illuminate\Support\Facades\Auth;
 use Tests\TestCase;
 
 class GroupTest extends TestCase
@@ -19,15 +17,17 @@ class GroupTest extends TestCase
     /** @test */
     public function authenticated_user_can_create_group()
     {
-        $this->seed(UsersTableSeeder::class);
+        $user = User::factory()->create();
 
-        Auth::login(User::first());
-
-        $response = $this->post('/api/group', $this->payload);
+        $response = $this->actingAs($user)->post('/api/group', $this->payload);
 
         $response->assertStatus(201);
 
         $this->assertDatabaseHas('groups', $this->payload);
+        $this->assertDatabaseHas('user_groups', [
+            'user_id' => $user->id,
+            'group_id' => Group::first()->id
+        ]);
     }
 
     /** @test */
@@ -42,11 +42,9 @@ class GroupTest extends TestCase
     /** @test */
     public function cannot_create_group_without_name()
     {
-        $this->seed(UsersTableSeeder::class);
+        $user = User::factory()->create();
 
-        Auth::login(User::first());
-
-        $response = $this->post('/api/group');
+        $response = $this->actingAs($user)->post('/api/group');
 
         $response->assertStatus(302);
     }

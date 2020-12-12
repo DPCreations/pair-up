@@ -2,10 +2,7 @@
 
 namespace Tests\Feature;
 
-use Illuminate\Support\Facades\Auth;
-use App\Models\{Movie, MovieRating, User};
-use Database\Seeders\MoviesTableSeeder;
-use Database\Seeders\UsersTableSeeder;
+use App\Models\{Movie, User};
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Tests\TestCase;
 
@@ -17,16 +14,11 @@ class MovieRatingTest extends TestCase
     public function authenticated_user_can_like_movie()
     {
         //Setup
-        $this->seed(UsersTableSeeder::class);
-        $this->seed(MoviesTableSeeder::class);
-
-        $user = User::first();
-        $movie = Movie::first();
-
-        Auth::login($user);
+        $user = User::factory()->create();
+        $movie = Movie::factory()->create();
 
         //Act
-        $response = $this->post('/api/movierating', [
+        $response = $this->actingAs($user)->post('/api/movierating', [
             'movie_id' => $movie->id,
             'liked' => true,
         ]);
@@ -44,10 +36,7 @@ class MovieRatingTest extends TestCase
     public function unauthenticated_user_cannot_like_movie()
     {
         //Setup
-        $this->seed(UsersTableSeeder::class);
-        $this->seed(MoviesTableSeeder::class);
-
-        $movie = Movie::first();
+        $movie = Movie::factory()->create();
 
         //Act
         $response = $this->post('/api/movierating', [
@@ -56,7 +45,7 @@ class MovieRatingTest extends TestCase
         ]);
 
         //Assert
-        $response->assertStatus(500);
+        $response->assertStatus(302);
         $this->assertDatabaseCount('movie_ratings', 0);
     }
 }

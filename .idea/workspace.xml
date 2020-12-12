@@ -6,8 +6,16 @@
   <component name="ChangeListManager">
     <list default="true" id="0c73d289-de69-45c7-9690-b1c27753d652" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/routes/api.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app/Http/Controllers/Api/GroupController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/app/Http/Controllers/Api/GroupController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app/Http/Controllers/Api/MovieRatingController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/app/Http/Controllers/Api/MovieRatingController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app/Models/Movie.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/app/Models/Movie.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/app/Models/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/database/factories/UserFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/database/factories/UserFactory.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/database/seeders/UsersTableSeeder.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/tests/Feature/ExampleTest.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app/tests/Feature/GroupTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/tests/Feature/GroupTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/tests/Feature/MovieRatingTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/tests/Feature/MovieRatingTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/tests/Unit/ExampleTest.php" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -170,21 +178,27 @@
       <option name="presentableId" value="Default" />
       <updated>1606755554316</updated>
       <workItem from="1606755555400" duration="8924000" />
-      <workItem from="1607173745318" duration="1763000" />
+      <workItem from="1607173745318" duration="9378000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/app/app/Models/User.php</url>
-          <line>41</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/app/app/Actions/Jetstream/DeleteUser.php</url>
           <line>19</line>

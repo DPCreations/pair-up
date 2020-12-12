@@ -19,9 +19,9 @@ class MovieRatingController extends Controller
      * Store a newly created resource in storage.
      *
      * @param Request $request
-     * @return Response
+     * @return MovieRating
      */
-    public function store(Request $request): Response
+    public function store(Request $request): MovieRating
     {
         $request->validate([
             'movie_id' => 'required|integer',
@@ -43,18 +43,6 @@ class MovieRatingController extends Controller
      * @return Response
      */
     public function show(MovieRating $movieRating): Response
-    {
-        //
-    }
-
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param Request $request
-     * @param MovieRating $movieRating
-     * @return Response
-     */
-    public function update(Request $request, MovieRating $movieRating): Response
     {
         //
     }

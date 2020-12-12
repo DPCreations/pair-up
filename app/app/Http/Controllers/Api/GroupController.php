@@ -33,16 +33,21 @@ class GroupController extends Controller
      * @param Request $request
      * @return Response
      */
-    public function store(Request $request)
+    public function store(Request $request): Response
     {
         $request->validate([
             'name' => 'required|string'
         ]);
 
-        return Group::create([
+        $group = Group::create([
             'user_id' => Auth::user()->id,
             'name' => $request->get('name')
         ]);
+
+        Auth::user()->joinGroup($group);
+
+        return new Response('Group created', 201);
+
     }
 
     /**
